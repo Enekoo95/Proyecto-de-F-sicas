@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 7833209079338784362}
   - component: {fileID: 5904533921183201901}
   - component: {fileID: 2098654747299223440}
+  - component: {fileID: 8826226873061703867}
+  - component: {fileID: 615059914407474705}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -30,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 4171223056896587652}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.13, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -162,6 +164,36 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8826226873061703867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4171223056896587652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a18a1dc4a10344a82869c7816a5129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 0}
+  gravityStrength: 9.81
+  alignStrength: 10
+  alignDamping: 2
+--- !u!114 &615059914407474705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4171223056896587652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b858bb4ee43e0b4099fe12bc68554f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 20
+  turnSpeed: 2
 --- !u!1 &4272721032373196794
 GameObject:
   m_ObjectHideFlags: 0
